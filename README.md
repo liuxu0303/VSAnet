@@ -37,3 +37,10 @@ VSA Estimation Dataset
   |   |   |   |---0000000.txt
   |   |   |   |---...
   ```
+  
+#### Train
+
+```bash
+cd VSAestimator-Code
+python3 -m torch.distributed.launch train_VSAestimator.py
+```
