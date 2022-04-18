@@ -15,7 +15,20 @@
 - pillow 
 - path
 
-#### Dataset
+### (1) Setup
+This code has been tested with Python 3.6.5, Torch 1.8.1, CUDA 10.2 and cuDNN 7.6.5 on Ubuntu 16.04.
+
+- Setup python environment
+```
+conda create -n VSAnet python=3.6.5
+source activate VSAnet
+pip install -r requirements.txt
+conda install -c pytorch pytorch=1.8.1 torchvision cudatoolkit=10.2
+conda install -c fvcore -c iopath -c conda-forge fvcore iopath
+conda install -c bottler nvidiacub
+pip install "git+https://github.com/facebookresearch/pytorch3d.git"
+```
+#### (2) Preparing the dataset
 
 VSA Estimation Dataset
 
@@ -38,9 +51,9 @@ VSA Estimation Dataset
   |   |   |   |---...
   ```
   
-#### Train
+#### Start training
 
 ```bash
 cd VSAestimator-Code
-python3 -m torch.distributed.launch train_VSAestimator.py
+python3 -m torch.distributed.launch train_VSAestimator.py --n_bins 256 --num_layers 3
 ```
