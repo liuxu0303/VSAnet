@@ -28,7 +28,7 @@ conda install -c fvcore -c iopath -c conda-forge fvcore iopath
 conda install -c bottler nvidiacub
 pip install "git+https://github.com/facebookresearch/pytorch3d.git"
 ```
-#### (2) Preparing the dataset
+### (2) Preparing the dataset
 
 VSA Estimation Dataset
 
@@ -51,7 +51,7 @@ VSA Estimation Dataset
   |   |   |   |---...
   ```
   
-#### Start training
+### (3) Start training
 
 ```bash
 cd VSAestimator-Code
