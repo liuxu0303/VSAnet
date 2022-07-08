@@ -1,0 +1,6 @@
+matplotlib==3.3.4
+imageio
+numpy
+pillow 
+path
+scikit-image
