@@ -1,6 +1,6 @@
 ![avatar](framework.jpg)
 
-## Getting Started
+## Learning Visible Surface Area Estimation for Irregular Objects
 
 #### Dependencies
 
@@ -28,9 +28,16 @@ conda install -c fvcore -c iopath -c conda-forge fvcore iopath
 conda install -c bottler nvidiacub
 pip install "git+https://github.com/facebookresearch/pytorch3d.git"
 ```
-### (2) Preparing the dataset
+### (2) VSA Estimation Dataset
 
-VSA Estimation Dataset
+The Ground truth set of each category(.npy):
+https://drive.google.com/file/d/1hgGcpQsDeRcfflCPgxGg7NjONdw5kbs-/view?usp=sharing
+
+Train split of VSA estimation dataset:
+https://drive.google.com/file/d/1fjIp6b3ZxTOdbeVtY7GbRanbqwbPLrtr/view?usp=sharing
+
+Test split of VSA estimation dataset:
+https://drive.google.com/file/d/1EVGkKaa1-ixV0b4qeDTJK3NL6XCfu7rD/view?usp=sharing
 
 - Dataset Directory
 
@@ -56,4 +63,15 @@ VSA Estimation Dataset
 ```bash
 cd VSAestimator-Code
 python3 -m torch.distributed.launch train_VSAestimator.py --n_bins 256 --num_layers 3
+```
+
+### Citation
+If you use this code for your research, please cite our paper.
+```
+@InProceedings{liu_mm_vsa,
+author = {Xu Liu, Jianing Li, Xianqi Zhang, Jingyuan Sun, Xiaopeng Fan, Yonghong Tian},
+title = {Learning Visible Surface Area Estimation for Irregular Objects},
+booktitle = {ACM MM},
+year = {2022}
+}
 ```
