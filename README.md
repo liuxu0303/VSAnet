@@ -35,6 +35,8 @@ https://drive.google.com/file/d/1fjIp6b3ZxTOdbeVtY7GbRanbqwbPLrtr/view?usp=shari
 Test split of VSA estimation dataset:
 https://drive.google.com/file/d/1EVGkKaa1-ixV0b4qeDTJK3NL6XCfu7rD/view?usp=sharing
 
+Description: The groung truth VSA of each object is in the .txt file(the first line). The second line of the .txt file refers to the object's category ID.
+
 - Dataset Directory
 
   ```
